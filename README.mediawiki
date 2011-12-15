@@ -1,0 +1,9 @@
+= Content Ingestion Spike =
+
+This project is designed for technology spikes on tools, techniques and conventions for the new content ingestion system. The code will not be used in production but can serve as a template in addition to a proving ground for everything from the libraries used, to object naming conventions.
+
+== Current Interesting Things in the Project ==
+
+* CQRS
+* Event Sourcing
+* Naming conventions for command and event driven systems
