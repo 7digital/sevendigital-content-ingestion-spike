@@ -1,4 +1,3 @@
-using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
 using SevenDigital.Content.Ingestion.Spike.Domain.Events;
 
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers

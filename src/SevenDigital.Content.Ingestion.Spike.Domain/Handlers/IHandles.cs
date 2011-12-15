@@ -1,6 +1,4 @@
-﻿using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
-
-namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
+﻿namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
 {
     public interface IHandles<T> where T : IMessage
     {

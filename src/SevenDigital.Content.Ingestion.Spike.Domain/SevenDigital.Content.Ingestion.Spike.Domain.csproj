@@ -50,7 +50,7 @@
     <Compile Include="Commands\FileDeposit.cs" />
     <Compile Include="Handlers\UploadActivator.cs" />
     <Compile Include="Handlers\IHandles.cs" />
-    <Compile Include="Commands\IMessage.cs" />
+    <Compile Include="IMessage.cs" />
     <Compile Include="Handlers\UploadDeactivator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
