@@ -1,4 +1,3 @@
-using System;
 using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
 
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
@@ -7,7 +6,7 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
     {
         public void Handle(ActivateLabelUpload cmd)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
