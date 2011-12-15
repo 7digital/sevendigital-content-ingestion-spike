@@ -40,7 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Commands\ActivateLabelUpload.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Events\LabelUploadActivated.cs" />
+    <Compile Include="Handlers\UploadActivator.cs" />
+    <Compile Include="Handlers\IHandles.cs" />
+    <Compile Include="Commands\IMessage.cs" />
+    <Compile Include="Handlers\UploadDeactivator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
