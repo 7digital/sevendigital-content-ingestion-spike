@@ -6,8 +6,17 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Models
 {
     public class LabelDepositJob : AggregateRoot
     {
+        private readonly string _label;
+        private readonly string _location;
+        private readonly PersistentKey _id;
         private bool _wasDetected;
-        private PersistentKey _id;
+
+        public LabelDepositJob(string label, string location)
+        {
+            _label = label;
+            _location = location;
+            _id = PersistentKey.New();
+        }
 
         public override PersistentKey Id
         {
@@ -23,7 +32,7 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Models
         {
             if(_wasDetected)
                 throw new InvalidOperationException("already been detected!");
-            _id = PersistentKey.New();
+            
             ApplyChange(new DepositDetected());
         }
     }

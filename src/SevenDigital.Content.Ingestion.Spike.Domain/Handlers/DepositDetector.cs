@@ -1,4 +1,5 @@
 using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
+using SevenDigital.Content.Ingestion.Spike.Domain.Models;
 
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
 {
@@ -6,7 +7,8 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
     {
         public void Handle(FileDeposit cmd)
         {
-            throw new System.NotImplementedException();
+            var depositJob = new LabelDepositJob(cmd.Label, cmd.Location);
+            depositJob.DetectDeposit();
         }
     }
 }
