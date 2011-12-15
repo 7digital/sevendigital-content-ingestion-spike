@@ -44,6 +44,10 @@
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Events\LabelUploadActivated.cs" />
+    <Compile Include="Events\DepositDetected.cs" />
+    <Compile Include="Handlers\DepositDetector.cs" />
+    <Compile Include="Handlers\DepositHandler.cs" />
+    <Compile Include="Commands\FileDeposit.cs" />
     <Compile Include="Handlers\UploadActivator.cs" />
     <Compile Include="Handlers\IHandles.cs" />
     <Compile Include="Commands\IMessage.cs" />
