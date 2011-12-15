@@ -1,6 +1,6 @@
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Commands
 {
-    public class Message : IMessage
+    public class ActivateLabelUpload : ICommand, IMessage
     {
     }
 }

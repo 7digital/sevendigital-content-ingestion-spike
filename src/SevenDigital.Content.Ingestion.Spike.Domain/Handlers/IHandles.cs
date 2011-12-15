@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
 
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
 {
-    interface IHandler
+    public interface IHandles<T> where T : IMessage
     {
+        void Handle(T cmd);
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenDigital.Content.Ingestion.Spike.Domain", "SevenDigital.Content.Ingestion.Spike.Domain.csproj", "{7227BBA4-5A50-41CC-A096-C62ED5A5C3A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenDigital.Content.Ingestion.Spike.Domain", "src\SevenDigital.Content.Ingestion.Spike.Domain\SevenDigital.Content.Ingestion.Spike.Domain.csproj", "{7227BBA4-5A50-41CC-A096-C62ED5A5C3A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
