@@ -68,6 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boilerplate\DelegateAdjuster.cs" />
+    <Compile Include="Boilerplate\PersistentKey.cs" />
+    <Compile Include="Boilerplate\PrivateReflectionDynamicObject.cs" />
     <Compile Include="Commands\ActivateLabelUpload.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Events\IEvent.cs" />
@@ -80,6 +83,8 @@
     <Compile Include="Handlers\IHandles.cs" />
     <Compile Include="IMessage.cs" />
     <Compile Include="Handlers\UploadDeactivator.cs" />
+    <Compile Include="Boilerplate\AggregateRoot.cs" />
+    <Compile Include="Models\LabelDepositJob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
