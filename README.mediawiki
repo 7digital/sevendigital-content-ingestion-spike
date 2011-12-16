@@ -7,3 +7,15 @@ This project is designed for technology spikes on tools, techniques and conventi
 * CQRS
 * Event Sourcing
 * Naming conventions for command and event driven systems
+
+== Getting Started ==
+* Clone it
+* Open the solution file
+* Ctrl+F5 will run the console app which hosts the web pages
+* Hit http://localhost:1212/ in a browser to check it's alive
+* Choose an end point to send your first command
+
+== But What Does It Do? ==
+At the moment the end points should start the command/event chain and update the PersistentStore object with changes to the domain objects.
+
+Next steps are to expose the state of the PersistentStore and EventStore repositories to the web pages so you can hit a command end point and see the consequences. The main point though, is the actual code and architecture.
