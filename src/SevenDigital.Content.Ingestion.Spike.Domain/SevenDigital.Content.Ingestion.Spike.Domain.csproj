@@ -76,6 +76,7 @@
     <Compile Include="Commands\ActivateLabelUpload.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="EventStore\EventRepository.cs" />
+    <Compile Include="EventStore\IEventStore.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Models\Label.cs" />
     <Compile Include="Events\LabelUploadActivated.cs" />

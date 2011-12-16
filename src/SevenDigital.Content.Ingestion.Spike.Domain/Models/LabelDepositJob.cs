@@ -10,6 +10,10 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Models
         private readonly PersistentKey _id;
         private bool _wasDetected;
 
+        public LabelDepositJob() 
+            : this("7digitalIndie")
+        { }
+
         public LabelDepositJob(string label)
         {
             _label = new Label(label);
@@ -31,7 +35,6 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Models
         {
             if(_wasDetected)
                 throw new InvalidOperationException("already been detected!");
-            
             
             ApplyChange(new DepositDetected(_id, _label));
         }

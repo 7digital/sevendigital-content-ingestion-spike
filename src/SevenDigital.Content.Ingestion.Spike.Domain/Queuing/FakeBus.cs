@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
 using SevenDigital.Content.Ingestion.Spike.Domain.Boilerplate;
+using SevenDigital.Content.Ingestion.Spike.Domain.Commands;
+using SevenDigital.Content.Ingestion.Spike.Domain.Events;
 
 namespace SevenDigital.Content.Ingestion.Spike.Domain.Queuing
 {
@@ -20,7 +24,7 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Queuing
             handlers.Add(DelegateAdjuster.CastArgument<IMessage, T>(x => handler(x)));
         }
 
-        public void Send<T>(T command) where T : IMessage
+        public void Send<T>(T command) where T : ICommand
         {
             List<Action<IMessage>> handlers;
             if (_routes.TryGetValue(typeof(T), out handlers))
@@ -34,13 +38,12 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Queuing
             }
         }
 
-        public void Publish<T>(T @event) where T : IMessage
+        public void Publish<T>(T @event) where T : IEvent
         {
             List<Action<IMessage>> handlers;
             if (!_routes.TryGetValue(@event.GetType(), out handlers)) return;
             foreach (var handler in handlers)
             {
-                //dispatch on thread pool for added awesomeness
                 var handler1 = handler;
                 ThreadPool.QueueUserWorkItem(x => handler1(@event));
             }
@@ -49,11 +52,11 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Queuing
 
     public interface ICommandSender
     {
-        void Send<T>(T command) where T : IMessage;
+        void Send<T>(T command) where T : ICommand;
 
     }
     public interface IEventPublisher
     {
-        void Publish<T>(T @event) where T : IMessage;
+        void Publish<T>(T @event) where T : IEvent;
     }
 }
