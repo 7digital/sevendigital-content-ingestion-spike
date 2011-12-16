@@ -28,12 +28,13 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Models
             _wasDetected = true;
         }
 
-        public void DetectDeposit()
+        public void DetectDeposit(Label label)
         {
             if(_wasDetected)
                 throw new InvalidOperationException("already been detected!");
             
-            ApplyChange(new DepositDetected());
+            
+            ApplyChange(new DepositDetected(_id, label));
         }
     }
 }

@@ -69,11 +69,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Boilerplate\DelegateAdjuster.cs" />
+    <Compile Include="Boilerplate\IPersistable.cs" />
+    <Compile Include="Boilerplate\IPersistentStore.cs" />
     <Compile Include="Boilerplate\PersistentKey.cs" />
     <Compile Include="Boilerplate\PrivateReflectionDynamicObject.cs" />
     <Compile Include="Commands\ActivateLabelUpload.cs" />
     <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="EventStore\EventRepository.cs" />
     <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Models\Label.cs" />
     <Compile Include="Events\LabelUploadActivated.cs" />
     <Compile Include="Events\DepositDetected.cs" />
     <Compile Include="Handlers\DepositDetector.cs" />

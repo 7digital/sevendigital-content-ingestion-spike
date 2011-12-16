@@ -8,7 +8,7 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Handlers
         public void Handle(FileDeposit cmd)
         {
             var depositJob = new LabelDepositJob(cmd.Label, cmd.Location);
-            depositJob.DetectDeposit();
+            depositJob.DetectDeposit(new Label(cmd.Label));
         }
     }
 }

@@ -30,5 +30,16 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.Boilerplate
         {
             return _key.ToString();
         }
+
+        public override bool Equals(object obj)
+        {
+            var comparer = obj as PersistentKey;
+            return obj != null && comparer._key.Equals(_key);
+        }
+
+        public override int GetHashCode()
+        {
+            return _key.GetHashCode();
+        }
     }
 }

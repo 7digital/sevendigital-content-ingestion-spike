@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenDigital.Content.Ingest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenDigital.Content.Ingestion.Spike.Host", "src\SevenDigital.Content.Ingestion.Spike.Host\SevenDigital.Content.Ingestion.Spike.Host.csproj", "{97D1668E-D854-443F-8E8E-CCB7BD29C305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenDigital.Content.Ingestion.Spike.Data", "src\SevenDigital.Content.Ingestion.Spike.Data\SevenDigital.Content.Ingestion.Spike.Data.csproj", "{7324B471-638A-4E78-92B6-5691C78A78BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{97D1668E-D854-443F-8E8E-CCB7BD29C305}.Release|Mixed Platforms.Build.0 = Release|x86
 		{97D1668E-D854-443F-8E8E-CCB7BD29C305}.Release|x86.ActiveCfg = Release|x86
 		{97D1668E-D854-443F-8E8E-CCB7BD29C305}.Release|x86.Build.0 = Release|x86
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7324B471-638A-4E78-92B6-5691C78A78BC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
