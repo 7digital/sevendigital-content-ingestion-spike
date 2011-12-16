@@ -9,7 +9,7 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.EventStore
         void Save(AggregateRoot aggregate, int expectedVersion);
     }
 
-    public class Repository<T> : IRepository<T> where T : AggregateRoot, new() //shortcut you can do as you see fit with new()
+    public class Repository<T> : IRepository<T> where T : AggregateRoot, new()
     {
         private readonly IEventStore _storage;
 
@@ -26,7 +26,6 @@ namespace SevenDigital.Content.Ingestion.Spike.Domain.EventStore
 
     public interface IEventStore
     {
-        void SaveEvents(PersistentKey aggregateId, IEnumerable<IEvent> events, int expectedVersion);
-        
+        void SaveEvents(PersistentKey aggregateId, IEnumerable<IEvent> events, int expectedVersion);       
     }
 }
